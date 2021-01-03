@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Nunito');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito','Microsoft JhengHei',sans-serif;
+}
+
+html,body {
+    height: 100%;
+  background-color: #1c1c1c;
+}
+
+a {
+    text-decoration:none;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: left;
+    height: 90px;
+    min-width:330px;
+    max-width: 470px;
+    margin:0px auto;
+    padding: 0 30px;;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #a6a6ba;
+opacity: 1;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #a6a6ba 16px ), repeating-linear-gradient( #51a15355, #51a153 );
+}
+
+.card h1 {
+    font-weight: 700;
+    font-size: 34px;
+    padding-top: 20px; 
+}
+  
+.card a {
+    color: #ffffff;
+
+}
+
+.wrapper {
+  padding: 10px;
+  min-width:100%;
+  display:flex;
+}
+
+h1 {
+  color: #ffffff;
+}
+header button {
+  padding:5px 30px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+nav button:hover{
+  background-color: rgba(0,136,169,0.8);
+}
+
+nav li, a, button {
+  font-weight: 500;
+  font-size:16px;
+  color: #1B813E;
+  text-decoration: none;
+}
+
+header {
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:30px;
+}
+
+.logo {
+    cursor: pointer;
+  margin-right:auto;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #ffffff
+}
+
+.logo {
+  cursor: pointer;
+}
+.day {
+  display:inline;
+}
+.Class_card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: left;
+    height: 120px;
+    max-width: 420px;
+    min-width:270px;
+    margin:0px auto;
+    padding: 0 30px;;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.Class_card h1 {
+      font-weight: 700;
+    font-size: 34px;
+    padding-top: 25px; 
+}
+
+.concent { margin:50px auto; width:100%; max-width:750px; min-width:320px; }
+.box { white-space:nowrap; overflow-x:auto; display:flex;max-width:75%;}
+.box::-webkit-scrollbar { width:0; height:0; display: none; }     
+
+.footer {
+  color: #ffffff;
+  padding-bottom:0px;
+  margin-bottom:0px;
+  width:100%;
+}
+
+.footer_Content{
+  margin:0px auto;
+}
+
+.login_panel {
+  width: 350px;
+  padding:40px;
+  position: absolute;
+  z-index: 2;
+  background-color: #00AA90;
+  top:30%;
+  left: 42%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.login {
+  position:absolute;
+  z-index: 1;
+  width: 100%;
+  height:100%;
+  display: none;
+}
+
+.login_background {
+  width: 100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.login_data {
+  font-size: 24px;
+  border:0;
+  width: 250px;
+  height:30px;
+  background-color: #00AA90;
+  display: flex;
+  margin: 20px auto;
+  text-align:left;
+  border:none;
+  outline: none;
+  color:white;
+  border-radius: 4px;
+  transition:0.25s;
+
+}
+
+#data_submit {
+  padding:5px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#data_submit:hover {
+  transition:0.25s;
+  background-color:#ffffff8e;
+  color:#ffffff;
+}
+
+#exit {
+  position:absolute;
+  right:20px;
+  top:20px;
+}
+
+@media screen and (max-width:767px){
+  .wrapper{
+    display:inline;
+    max-width:450px;
+  }
+  .box {
+    max-width:100%;
+    min-width:90%;
+  }
+  .card {
+    max-width:100%;
+  }
+
+  .login_panel {
+    width: 80%;
+    padding:40px;
+    position: absolute;
+    z-index: 2;
+    background-color: #00AA90;
+    top:30%;
+    left: 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+  }
+}
+

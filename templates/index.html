@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末</title>
+    <link href="{{ url_for('static',filename='styles/styles.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="warpper">
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="margin-left: 10px;float: left;">
+    <div id="tradingview_ce108" style="margin-left: 0px;"></div>
+    <div class="tradingview-widget-copyright"><a href="https://tw.tradingview.com/symbols/ETHUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">ETHUSDT 圖表</span></a>由TradingView提供</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+    new TradingView.widget(
+    {
+    "width": 980,
+    "height": 610,
+    "symbol": "BINANCE:ETHUSDT",
+    "interval": "1",
+    "timezone": "Asia/Taipei",
+    "theme": "dark",
+    "style": "1",
+    "locale": "zh_TW",
+    "toolbar_bg": "#f1f3f6",
+    "enable_publishing": false,
+    "allow_symbol_change": true,
+    "container_id": "tradingview_ce108"
+  }
+    );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <div class="bank_Panel">
+      <h1>{{bankbalance}}</h1>
+      <h1>{{tradebalance}}</h1>
+      <div>
+        <form method="post">
+        <input name="transfer_amount">test</input>
+        <button id="transfer_out" name="send" value="send">transfer to trade account</button>
+        </form>
+      </div>
+  </div>
+  </div>
+</body>
+</html>
